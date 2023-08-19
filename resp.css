@@ -1,0 +1,158 @@
+@media (max-width: 800px) {
+  #presentation {
+    display: flex;
+    flex-direction: column;
+  }
+  #greeting {
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  #about-me {
+    width: 80%;
+    margin: auto;
+  }
+
+  #details{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .nav-bar {
+    height: 0px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: #2a64d9 ;
+    /* background-image: linear-gradient(62deg, rgb(182, 0, 0) 50%, #800101 100%); */
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .nav-bar.active {
+    height: 250px;
+    border-bottom: 2px solid white;
+  }
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 40px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+  }
+
+  .address{
+    font-size: 25px;
+  }
+}
+
+
+
+
+@media (max-width: 500px) {
+  .title{
+    font-size: 30px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  #greeting {
+    font-size: 15px;
+  }
+  .address{
+    font-size: 20px;
+    width: 40%;
+  }
+  .hamburger .line {
+    width: 25px;
+    height: 2px;
+    margin: 5px 0;
+  }
+  
+
+}
+@media (max-width: 375px) {
+  .title{
+    font-size: 25px;
+  }
+
+  #greeting {
+    font-size: 12px;
+  }
+  .address{
+    font-size: 20px;
+    width: 40%;
+  }
+  #about-me {
+    width: 80%;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+
+}
+@media (max-width: 310px) {
+  .title{
+    font-size: 25px;
+  }
+
+  #greeting {
+    font-size: 10px;
+  }
+  .address{
+    font-size: 20px;
+    width: 40%;
+  }
+
+  #personnel-pic {
+    width: 25%;
+    border-radius: 50%;
+    border: 3px solid white;
+    min-width: 200px;
+  }
+
+  .project-img {
+    max-width: 180px;
+    height: 180px;
+  }
+  .project-link {
+    max-width: 180px;
+  }
+  #projects {
+    
+    width: 90%;
+    margin: auto;
+  }
+  
+  .logo {
+    font-size: 15px;
+  }
+  .hamburger .line {
+    width: 22px;
+    height: 1.5px;
+    margin: 5px 0;
+  }
+
+}
